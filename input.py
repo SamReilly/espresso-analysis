@@ -30,7 +30,7 @@ infusion_time = float(responses[4])
 shot_time = float(responses[5])
 total_time = infusion_time + shot_time
 ratio_diff = (actual_ratio - target_ratio) / target_ratio
-avg_flow = actual_output / total_time
+avg_flow = actual_output / shot_time
 
 data = [grind_size, dose, target_ratio, target_output, actual_output,
         actual_ratio, infusion_time, shot_time, total_time, ratio_diff, avg_flow]
